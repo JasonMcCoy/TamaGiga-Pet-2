@@ -12,6 +12,7 @@
 		131F08271D1FBA2D00376440 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 131F08251D1FBA2D00376440 /* Main.storyboard */; };
 		131F08291D1FBA2D00376440 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 131F08281D1FBA2D00376440 /* Assets.xcassets */; };
 		131F082C1D1FBA2D00376440 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 131F082A1D1FBA2D00376440 /* LaunchScreen.storyboard */; };
+		1324F82E1D1FDD4800A74883 /* Fancy Signature Extras.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1324F82D1D1FDD4800A74883 /* Fancy Signature Extras.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		131F08281D1FBA2D00376440 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		131F082B1D1FBA2D00376440 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		131F082D1D1FBA2D00376440 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1324F82D1D1FDD4800A74883 /* Fancy Signature Extras.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fancy Signature Extras.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		131F08201D1FBA2D00376440 /* TamaGiga Pet 2 */ = {
 			isa = PBXGroup;
 			children = (
+				1324F82D1D1FDD4800A74883 /* Fancy Signature Extras.ttf */,
 				131F08211D1FBA2D00376440 /* AppDelegate.swift */,
 				131F08231D1FBA2D00376440 /* ViewController.swift */,
 				131F08251D1FBA2D00376440 /* Main.storyboard */,
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1324F82E1D1FDD4800A74883 /* Fancy Signature Extras.ttf in Resources */,
 				131F082C1D1FBA2D00376440 /* LaunchScreen.storyboard in Resources */,
 				131F08291D1FBA2D00376440 /* Assets.xcassets in Resources */,
 				131F08271D1FBA2D00376440 /* Main.storyboard in Resources */,
@@ -297,6 +301,7 @@
 				131F08321D1FBA2D00376440 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
