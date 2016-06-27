@@ -5,8 +5,8 @@
 To feed the pet, simply click the heart or food and drag it to the golem.
 
 
-Here is what my final xcode setup looks like:
-![alt tag](http://mccoygames.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-26-at-12.26.54-AM.png)
+Here is what my early xcode setup looked like:
+![alt tag](http://mccoygames.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-26-at-10.13.47-PM.png)
 
 
 When you wait 6 seconds without feeding the pet golem. This is a randomly chosen heart.
