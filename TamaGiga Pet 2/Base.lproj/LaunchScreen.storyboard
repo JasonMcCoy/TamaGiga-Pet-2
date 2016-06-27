@@ -32,9 +32,14 @@
                                 <color key="textColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="m62-AU-SOR"/>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="m62-AU-SOR" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Shz-s4-W5i"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="m62-AU-SOR" secondAttribute="bottom" id="XAk-xq-ze6"/>
+                            <constraint firstItem="m62-AU-SOR" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="bXd-f2-Teq"/>
+                            <constraint firstAttribute="trailing" secondItem="m62-AU-SOR" secondAttribute="trailing" id="iXH-BK-5Es"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="DAk-SJ-k8H" secondAttribute="bottom" id="koC-wb-5Xo"/>
                             <constraint firstItem="DAk-SJ-k8H" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="qQQ-xG-Xfg"/>
                         </constraints>
@@ -45,4 +50,7 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg" width="1354" height="2048"/>
+    </resources>
 </document>

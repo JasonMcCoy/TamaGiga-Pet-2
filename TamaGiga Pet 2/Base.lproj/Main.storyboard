@@ -5,6 +5,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Fancy Signature Extras.ttf">
+            <string>FancySignatureExtras</string>
+            <string>FancySignatureExtras</string>
+            <string>FancySignatureExtras</string>
+            <string>FancySignatureExtras</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -18,17 +26,82 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iFH-cu-Xpt"/>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vx7-YP-DeL">
-                                <frame key="frameInset" minY="576" width="375" height="91"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="iFH-cu-Xpt"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground 2" translatesAutoresizingMaskIntoConstraints="NO" id="Vx7-YP-DeL">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="V4H-nF-mQR"/>
+                                    <constraint firstAttribute="height" constant="67" id="t41-rx-jhq"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lives panel" translatesAutoresizingMaskIntoConstraints="NO" id="oAu-AE-nXH">
+                                <frame key="frameInset" minX="40" width="295" height="103"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heart2" translatesAutoresizingMaskIntoConstraints="NO" id="ZvF-6a-vkV">
+                                <frame key="frameInset" minX="16" minY="134" width="92" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="meat" translatesAutoresizingMaskIntoConstraints="NO" id="0ao-51-0qp">
+                                <frame key="frameInset" minX="133" minY="134" width="92" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bones" translatesAutoresizingMaskIntoConstraints="NO" id="eDM-vk-6VY">
+                                <frame key="frameInset" minX="220" minY="94" width="171" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="skulll" translatesAutoresizingMaskIntoConstraints="NO" id="PJU-Ze-eqr">
+                                <frame key="frameInset" minX="58" minY="12" width="87" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="skulll" translatesAutoresizingMaskIntoConstraints="NO" id="J8H-pn-yCm">
+                                <frame key="frameInset" minX="138" minY="12" width="87" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="skulll" translatesAutoresizingMaskIntoConstraints="NO" id="Hwu-yP-SXB">
+                                <frame key="frameInset" minX="220" minY="12" width="87" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="golemIdle1" translatesAutoresizingMaskIntoConstraints="NO" id="ucx-au-Kqk">
+                                <frame key="frameInset" minX="-20" minY="225" width="460" height="395"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Heart" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mK-Cr-apV">
+                                <frame key="frameInset" minX="22" minY="223" width="80" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="FancySignatureExtras" family="Fancy Signature" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fez-vV-rDD">
+                                <frame key="frameInset" minX="139" minY="223" width="80" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="FancySignatureExtras" family="Fancy Signature" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEI-oC-XxU">
+                                <frame key="frameInset" minX="259" minY="223" width="93" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="FancySignatureExtras" family="Fancy Signature" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I'm so hungry....." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTj-w9-CUy">
+                                <frame key="frameInset" minX="172" minY="302" width="201" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="FancySignatureExtras" family="Fancy Signature" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="iFH-cu-Xpt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4Ma-wt-qIE"/>
+                            <constraint firstAttribute="trailing" secondItem="Vx7-YP-DeL" secondAttribute="trailing" id="JLf-dy-Mvr"/>
                             <constraint firstItem="iFH-cu-Xpt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="b5J-fj-lhd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Vx7-YP-DeL" secondAttribute="bottom" id="k3I-z7-p11"/>
                             <constraint firstAttribute="trailing" secondItem="iFH-cu-Xpt" secondAttribute="trailing" id="mun-3q-rb7"/>
+                            <constraint firstItem="Vx7-YP-DeL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tO4-l3-hvB"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iFH-cu-Xpt" secondAttribute="bottom" id="u8p-Qn-BLe"/>
                         </constraints>
                     </view>
@@ -38,4 +111,14 @@
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg" width="1354" height="2048"/>
+        <image name="bones" width="475" height="490"/>
+        <image name="golemIdle1" width="1172" height="1000"/>
+        <image name="ground 2" width="1444" height="151"/>
+        <image name="heart2" width="190" height="196"/>
+        <image name="lives panel" width="468" height="137"/>
+        <image name="meat" width="190" height="196"/>
+        <image name="skulll" width="190" height="196"/>
+    </resources>
 </document>
