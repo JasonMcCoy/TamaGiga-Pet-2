@@ -9,14 +9,28 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var redGolem: UIImageView!
+    @IBOutlet weak var redGolemHeart: DragAnimation!
+    @IBOutlet weak var redGolemMeat: DragAnimation!
+    @IBOutlet weak var redGolemStalactite: DragAnimation!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        var imgArray = [UIImage]()
         
+        for suffixNumber in 1...4 {
+            let img = UIImage(named: "golemIdle\(suffixNumber).png")
+            imgArray.append(img!)
+        }
+        
+        redGolem.animationImages = imgArray
+        redGolem.animationDuration = 0.8
+        redGolem.animationRepeatCount = 0
+        redGolem.startAnimating()
         
     }
-    
-    
 
 }
