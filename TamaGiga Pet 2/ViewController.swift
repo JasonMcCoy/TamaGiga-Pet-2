@@ -32,5 +32,13 @@ class ViewController: UIViewController {
         redGolem.startAnimating()
         
     }
+    
+    
+    //Im Assuming you didn't want the status bar
+    /* Hide Status Bar */
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    /* End Hide Status Bar */
 
 }
