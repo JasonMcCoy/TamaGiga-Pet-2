@@ -19,6 +19,8 @@
 		1324F8371D20DEFF00A74883 /* heart.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1324F8321D20DEFF00A74883 /* heart.wav */; };
 		1324F8381D20DEFF00A74883 /* skull.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1324F8331D20DEFF00A74883 /* skull.wav */; };
 		1394396E1D22463500858E26 /* DragAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1394396D1D22463500858E26 /* DragAnimation.swift */; };
+		51F973D61D241A71002F3076 /* GolemImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F973D51D241A71002F3076 /* GolemImg.swift */; };
+		51F973D81D241EC3002F3076 /* PinkGolemImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F973D71D241EC3002F3076 /* PinkGolemImg.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		1324F8321D20DEFF00A74883 /* heart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = heart.wav; sourceTree = "<group>"; };
 		1324F8331D20DEFF00A74883 /* skull.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = skull.wav; sourceTree = "<group>"; };
 		1394396D1D22463500858E26 /* DragAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragAnimation.swift; sourceTree = "<group>"; };
+		51F973D51D241A71002F3076 /* GolemImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GolemImg.swift; sourceTree = "<group>"; };
+		51F973D71D241EC3002F3076 /* PinkGolemImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinkGolemImg.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 				1324F8331D20DEFF00A74883 /* skull.wav */,
 				131F08211D1FBA2D00376440 /* AppDelegate.swift */,
 				131F08231D1FBA2D00376440 /* ViewController.swift */,
+				51F973D51D241A71002F3076 /* GolemImg.swift */,
+				51F973D71D241EC3002F3076 /* PinkGolemImg.swift */,
 				131F08251D1FBA2D00376440 /* Main.storyboard */,
 				1394396D1D22463500858E26 /* DragAnimation.swift */,
 				131F08281D1FBA2D00376440 /* Assets.xcassets */,
@@ -166,7 +172,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				131F08241D1FBA2D00376440 /* ViewController.swift in Sources */,
+				51F973D81D241EC3002F3076 /* PinkGolemImg.swift in Sources */,
 				1394396E1D22463500858E26 /* DragAnimation.swift in Sources */,
+				51F973D61D241A71002F3076 /* GolemImg.swift in Sources */,
 				131F08221D1FBA2D00376440 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
