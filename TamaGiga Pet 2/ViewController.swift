@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var redGolemHeart: DragAnimation!
     @IBOutlet weak var redGolemMeat: DragAnimation!
     @IBOutlet weak var redGolemStalactite: DragAnimation!
+    @IBOutlet weak var pinkGolem: PinkGolemImg!
     
 
     override func viewDidLoad() {

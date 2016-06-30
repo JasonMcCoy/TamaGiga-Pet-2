@@ -22,14 +22,14 @@ class PinkGolemImg: UIImageView {
     
     func playIdleAnimation() {
         
-        self.image = UIImage(named: "PinkgolemIdle1.png")
+        self.image = UIImage(named: "pinkGolemIdle1.png")
         
         self.animationImages = nil
         
         var imgArray = [UIImage]()
         
         for suffixNumber in 1...4 {
-            let img = UIImage(named: "PinkgolemIdle\(suffixNumber).png")
+            let img = UIImage(named: "pinkGolemIdle\(suffixNumber).png")
             imgArray.append(img!)
         }
         
@@ -41,14 +41,14 @@ class PinkGolemImg: UIImageView {
     
     func playDeathAnimation() {
         
-        self.image = UIImage(named: "PinkgolemDeath1.png")
+        self.image = UIImage(named: "pinkGolemDeath1.png")
         
         self.animationImages = nil
         
         var imgArray = [UIImage]()
         
         for suffixNumber in 1...4 {
-            let img = UIImage(named: "PinkgolemDeath\(suffixNumber).png")
+            let img = UIImage(named: "pinkGolemDeath\(suffixNumber).png")
             imgArray.append(img!)
         }
         
