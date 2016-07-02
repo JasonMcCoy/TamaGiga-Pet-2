@@ -22,10 +22,13 @@ class ViewController: UIViewController {
     
     let OPAQUE: CGFloat = 1.0
     let DIM_ALPHA: CGFloat = 0
+    let DIM_ALPHA2: CGFloat = 0.3
     let MAX_PENALTIES = 3
     
     var penalties = 0
     var timer: Timer!
+    var monsterHappy = false
+    var currentItem: UInt32 = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +51,15 @@ class ViewController: UIViewController {
     }
     
     func itemDroppedOnCharacter(notif: AnyObject) {
+        monsterHappy = true
+        startTimer()
         
+        redGolemMeat.alpha = DIM_ALPHA
+        redGolemMeat.isUserInteractionEnabled = false
+        redGolemHeart.alpha = DIM_ALPHA
+        redGolemHeart.isUserInteractionEnabled = false
+        redGolemStalactite.alpha = DIM_ALPHA
+        redGolemStalactite.isUserInteractionEnabled = false
     }
     
     func startTimer() {
@@ -60,7 +71,8 @@ class ViewController: UIViewController {
     
     func changeGameState() {
         
-        penalties += 1
+        if !monsterHappy {
+                    penalties += 1
         
         if penalties == 1 {
             penaltySkullImg1.alpha = OPAQUE
@@ -79,8 +91,43 @@ class ViewController: UIViewController {
         if penalties >= MAX_PENALTIES {
             gameOver()
         }
-        
     }
+        
+        let rand = arc4random_uniform(3)
+        
+        if rand == 0 { // 0 means the Heart food is playable and the other foods are not.
+            redGolemHeart.alpha = OPAQUE
+            redGolemHeart.isUserInteractionEnabled = true
+            
+            redGolemMeat.alpha = DIM_ALPHA2
+            redGolemMeat.isUserInteractionEnabled = false
+            
+            redGolemStalactite.alpha = DIM_ALPHA2
+            redGolemStalactite.isUserInteractionEnabled = false
+        } else {
+            redGolemHeart.alpha = DIM_ALPHA2
+            redGolemHeart.isUserInteractionEnabled = false
+            
+            redGolemMeat.alpha = OPAQUE
+            redGolemMeat.isUserInteractionEnabled = true
+            
+            redGolemStalactite.alpha = DIM_ALPHA2
+            redGolemStalactite.isUserInteractionEnabled = false
+        } else {
+            redGolemHeart.alpha = DIM_ALPHA2
+            redGolemHeart.isUserInteractionEnabled = false
+            
+            redGolemMeat.alpha = DIM_ALPHA2
+            redGolemMeat.isUserInteractionEnabled = false
+            
+            redGolemStalactite.alpha = OPAQUE
+            redGolemStalactite.isUserInteractionEnabled = true
+        }
+        
+        currentItem = rand
+        monsterHappy = false
+        
+}
     
     func gameOver() {
         timer.invalidate()
