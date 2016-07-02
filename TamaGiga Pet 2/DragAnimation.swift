@@ -41,7 +41,9 @@ required init?(coder aDecoder: NSCoder) {
             let position = touch.location(in: self.superview)
             
             if target.frame.contains(position) {
+               
                 NotificationCenter.default().post(NSNotification(name: "onTargetDropped" as NSNotification.Name, object: nil) as Notification)
+            
             }
             
         }

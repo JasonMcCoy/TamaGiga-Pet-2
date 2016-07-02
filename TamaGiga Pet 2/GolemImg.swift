@@ -41,7 +41,7 @@ class GolemImg: UIImageView {
     
     func playDeathAnimation() {
         
-        self.image = UIImage(named: "golemDeath1.png")
+        self.image = UIImage(named: "golemDeath4.png")
         
         self.animationImages = nil
         
