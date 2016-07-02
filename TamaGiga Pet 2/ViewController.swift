@@ -54,11 +54,11 @@ class ViewController: UIViewController {
         monsterHappy = true
         startTimer()
         
-        redGolemMeat.alpha = DIM_ALPHA
+        redGolemMeat.alpha = DIM_ALPHA2
         redGolemMeat.isUserInteractionEnabled = false
-        redGolemHeart.alpha = DIM_ALPHA
+        redGolemHeart.alpha = DIM_ALPHA2
         redGolemHeart.isUserInteractionEnabled = false
-        redGolemStalactite.alpha = DIM_ALPHA
+        redGolemStalactite.alpha = DIM_ALPHA2
         redGolemStalactite.isUserInteractionEnabled = false
     }
     
