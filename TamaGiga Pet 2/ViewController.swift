@@ -104,7 +104,7 @@ class ViewController: UIViewController {
             
             redGolemStalactite.alpha = DIM_ALPHA2
             redGolemStalactite.isUserInteractionEnabled = false
-        } else {
+        } else if rand == 1 { // 1 means the Meat food is playable and the other foods are not.
             redGolemHeart.alpha = DIM_ALPHA2
             redGolemHeart.isUserInteractionEnabled = false
             
@@ -113,7 +113,7 @@ class ViewController: UIViewController {
             
             redGolemStalactite.alpha = DIM_ALPHA2
             redGolemStalactite.isUserInteractionEnabled = false
-        } else {
+        } else if rand == 2 { // 2 means the Stalactite food is playable and the other foods are not.
             redGolemHeart.alpha = DIM_ALPHA2
             redGolemHeart.isUserInteractionEnabled = false
             
