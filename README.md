@@ -3,18 +3,20 @@
 *So far only compatible with iPhone 6S in portrait mode for iOS 10.
 
 
-Here is what my final xcode setup looks like:
-![alt tag](http://mccoygames.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-26-at-12.26.54-AM.png)
+Here is what my xcode setup looks like:
+![alt tag](http://mccoygames.com/wp-content/uploads/2016/07/Screen-Shot-2016-07-02-at-1.31.10-AM.png)
 
 
-When you wait 6 seconds without feeding the pet golem. This is a randomly chosen heart.
-![alt tag](http://mccoygames.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-26-at-12.28.06-AM.png)
+Here is what the game looks like upon initial launch (so far...)!
+![alt tag](http://mccoygames.com/wp-content/uploads/2016/07/Screen-Shot-2016-07-02-at-1.31.33-AM.png)
 
-Here is a randomly chosen food that also has a nice sound effect to it as well!
-![alt tag](http://mccoygames.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-26-at-12.28.16-AM.png)
+
+When you wait 6 seconds without feeding the pet golem. This is a randomly chosen Stalactite.
+![alt tag](http://mccoygames.com/wp-content/uploads/2016/07/Screen-Shot-2016-07-02-at-1.32.17-AM.png)
+
 
 If you neglect your pet golem, this is what happens :'(
-![alt tag](http://mccoygames.com/wp-content/uploads/2016/06/Screen-Shot-2016-06-26-at-12.28.20-AM.png)
+![alt tag](http://mccoygames.com/wp-content/uploads/2016/07/Screen-Shot-2016-07-02-at-1.31.52-AM.png)
 
 
 
