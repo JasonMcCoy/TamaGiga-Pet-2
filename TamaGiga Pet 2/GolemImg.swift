@@ -54,7 +54,7 @@ class GolemImg: UIImageView {
         
         self.animationImages = imgArray
         self.animationDuration = 0.8
-        self.animationRepeatCount = 0
+        self.animationRepeatCount = 1
         self.startAnimating()
     }
     

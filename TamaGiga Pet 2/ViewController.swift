@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     
     let OPAQUE: CGFloat = 1.0
-    let DIM_ALPHA: CGFloat = 0.4
+    let DIM_ALPHA: CGFloat = 0
     let MAX_PENALTIES = 3
     
     var penalties = 0
