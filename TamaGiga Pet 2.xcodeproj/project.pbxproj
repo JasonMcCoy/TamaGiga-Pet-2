@@ -14,10 +14,11 @@
 		131F082C1D1FBA2D00376440 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 131F082A1D1FBA2D00376440 /* LaunchScreen.storyboard */; };
 		1324F82E1D1FDD4800A74883 /* Fancy Signature Extras.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1324F82D1D1FDD4800A74883 /* Fancy Signature Extras.ttf */; };
 		1324F8341D20DEFF00A74883 /* bite.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1324F82F1D20DEFF00A74883 /* bite.wav */; };
-		1324F8351D20DEFF00A74883 /* cave-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1324F8301D20DEFF00A74883 /* cave-music.mp3 */; };
 		1324F8361D20DEFF00A74883 /* death.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1324F8311D20DEFF00A74883 /* death.wav */; };
 		1324F8371D20DEFF00A74883 /* heart.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1324F8321D20DEFF00A74883 /* heart.wav */; };
 		1324F8381D20DEFF00A74883 /* skull.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1324F8331D20DEFF00A74883 /* skull.wav */; };
+		1336F59A1D28F09400B03E6F /* stalactite.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1336F5991D28F09400B03E6F /* stalactite.mp3 */; };
+		1336F59C1D28F0AF00B03E6F /* bgmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1336F59B1D28F0AF00B03E6F /* bgmusic.mp3 */; };
 		1394396E1D22463500858E26 /* DragAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1394396D1D22463500858E26 /* DragAnimation.swift */; };
 		51F973D61D241A71002F3076 /* GolemImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F973D51D241A71002F3076 /* GolemImg.swift */; };
 		51F973D81D241EC3002F3076 /* PinkGolemImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F973D71D241EC3002F3076 /* PinkGolemImg.swift */; };
@@ -33,10 +34,11 @@
 		131F082D1D1FBA2D00376440 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1324F82D1D1FDD4800A74883 /* Fancy Signature Extras.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fancy Signature Extras.ttf"; sourceTree = "<group>"; };
 		1324F82F1D20DEFF00A74883 /* bite.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bite.wav; sourceTree = "<group>"; };
-		1324F8301D20DEFF00A74883 /* cave-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "cave-music.mp3"; sourceTree = "<group>"; };
 		1324F8311D20DEFF00A74883 /* death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = death.wav; sourceTree = "<group>"; };
 		1324F8321D20DEFF00A74883 /* heart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = heart.wav; sourceTree = "<group>"; };
 		1324F8331D20DEFF00A74883 /* skull.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = skull.wav; sourceTree = "<group>"; };
+		1336F5991D28F09400B03E6F /* stalactite.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = stalactite.mp3; sourceTree = "<group>"; };
+		1336F59B1D28F0AF00B03E6F /* bgmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgmusic.mp3; sourceTree = "<group>"; };
 		1394396D1D22463500858E26 /* DragAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragAnimation.swift; sourceTree = "<group>"; };
 		51F973D51D241A71002F3076 /* GolemImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GolemImg.swift; sourceTree = "<group>"; };
 		51F973D71D241EC3002F3076 /* PinkGolemImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinkGolemImg.swift; sourceTree = "<group>"; };
@@ -73,11 +75,12 @@
 			isa = PBXGroup;
 			children = (
 				1324F82D1D1FDD4800A74883 /* Fancy Signature Extras.ttf */,
-				1324F82F1D20DEFF00A74883 /* bite.wav */,
-				1324F8301D20DEFF00A74883 /* cave-music.mp3 */,
-				1324F8311D20DEFF00A74883 /* death.wav */,
-				1324F8321D20DEFF00A74883 /* heart.wav */,
+				1336F59B1D28F0AF00B03E6F /* bgmusic.mp3 */,
 				1324F8331D20DEFF00A74883 /* skull.wav */,
+				1324F8321D20DEFF00A74883 /* heart.wav */,
+				1324F82F1D20DEFF00A74883 /* bite.wav */,
+				1336F5991D28F09400B03E6F /* stalactite.mp3 */,
+				1324F8311D20DEFF00A74883 /* death.wav */,
 				131F08211D1FBA2D00376440 /* AppDelegate.swift */,
 				131F08231D1FBA2D00376440 /* ViewController.swift */,
 				51F973D51D241A71002F3076 /* GolemImg.swift */,
@@ -152,15 +155,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1336F59A1D28F09400B03E6F /* stalactite.mp3 in Resources */,
 				1324F8341D20DEFF00A74883 /* bite.wav in Resources */,
 				1324F8381D20DEFF00A74883 /* skull.wav in Resources */,
+				1336F59C1D28F0AF00B03E6F /* bgmusic.mp3 in Resources */,
 				1324F8371D20DEFF00A74883 /* heart.wav in Resources */,
 				1324F82E1D1FDD4800A74883 /* Fancy Signature Extras.ttf in Resources */,
 				131F082C1D1FBA2D00376440 /* LaunchScreen.storyboard in Resources */,
 				131F08291D1FBA2D00376440 /* Assets.xcassets in Resources */,
 				131F08271D1FBA2D00376440 /* Main.storyboard in Resources */,
 				1324F8361D20DEFF00A74883 /* death.wav in Resources */,
-				1324F8351D20DEFF00A74883 /* cave-music.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
