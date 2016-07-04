@@ -19,7 +19,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var penaltySkullImg1: UIImageView!
     @IBOutlet weak var penaltySkullImg2: UIImageView!
     @IBOutlet weak var penaltySkullImg3: UIImageView!
+    @IBOutlet weak var livesPanel: UIImageView!
     @IBOutlet weak var restartBtn: UIButton!
+    @IBOutlet weak var redGolemBtn: UIButton!
+    @IBOutlet weak var redGolemBtnTxt: UILabel!
+    @IBOutlet weak var pinkGolemBtn: UIButton!
+    @IBOutlet weak var pinkGolemBtnTxt: UILabel!
+    @IBOutlet weak var chooseMonsterLabel: UIImageView!
+    @IBOutlet weak var monsterLabelText: UILabel!
+    @IBOutlet weak var heartTxtLbl: UILabel!
+    @IBOutlet weak var meatTxtLbl: UILabel!
+    @IBOutlet weak var stalactiteTxtLbl: UILabel!
+    
     
     @IBAction func restartBtn(_ sender: AnyObject) {
         
@@ -38,6 +49,32 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func redGolemBtn(_ sender: AnyObject) {
+        
+        chooseMonsterLabel.isHidden = true
+        monsterLabelText.isHidden = true
+        redGolemBtn.isHidden = true
+        redGolemBtnTxt.isHidden = true
+        pinkGolemBtn.isHidden = true
+        pinkGolemBtnTxt.isHidden = true
+        redGolem.playIdleAnimation()
+        chooseMonster()
+        
+    }
+    
+    @IBAction func pinkGolemBtn(_ sender: AnyObject) {
+        
+        chooseMonsterLabel.isHidden = true
+        monsterLabelText.isHidden = true
+        redGolemBtn.isHidden = true
+        redGolemBtnTxt.isHidden = true
+        pinkGolemBtn.isHidden = true
+        pinkGolemBtnTxt.isHidden = true
+        pinkGolem.playIdleAnimation()
+        chooseMonster()
+        
+    }
+    
     
     let OPAQUE: CGFloat = 1.0
     let DIM_ALPHA: CGFloat = 0
@@ -48,6 +85,8 @@ class ViewController: UIViewController {
     var timer: Timer!
     var monsterHappy = false
     var currentItem: UInt32 = 0
+    var monsterChosen = false
+    var monster2Chosen = false
     
     var sfxBGMusic: AVAudioPlayer!
     var sfxSkull: AVAudioPlayer!
@@ -59,19 +98,24 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        redGolemHeart.dropTarget = redGolem
-        redGolemMeat.dropTarget = redGolem
-        redGolemStalactite.dropTarget = redGolem
-        redGolemHeart.dropTarget = pinkGolem
-        redGolemMeat.dropTarget = pinkGolem
-        redGolemStalactite.dropTarget = pinkGolem
+        penaltySkullImg1.isHidden = true
+        penaltySkullImg2.isHidden = true
+        penaltySkullImg3.isHidden = true
+        restartBtn.isHidden = true
         
-        penaltySkullImg1.alpha = DIM_ALPHA
-        penaltySkullImg2.alpha = DIM_ALPHA
-        penaltySkullImg3.alpha = DIM_ALPHA
-        
+    }
+    
+    func chooseMonster() {
+        if monsterChosen == true {
+            redGolemHeart.dropTarget = redGolem
+            redGolemMeat.dropTarget = redGolem
+            redGolemStalactite.dropTarget = redGolem
+        } else if monster2Chosen == true {
+            redGolemHeart.dropTarget = pinkGolem
+            redGolemMeat.dropTarget = pinkGolem
+            redGolemStalactite.dropTarget = pinkGolem
+        }
         startGame()
-        
     }
     
     func itemDroppedOnCharacter(notif: AnyObject) {
