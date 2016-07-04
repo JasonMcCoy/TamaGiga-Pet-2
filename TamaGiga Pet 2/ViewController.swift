@@ -55,8 +55,8 @@ class ViewController: UIViewController {
     
     @IBAction func redGolemBtn(_ sender: AnyObject) {
         
-        monsterChosen = true
-        monster2Chosen = false
+        maleGolemChosen = true
+        femaleGolemChosen = false
         chooseMonsterLabel.isHidden = true
         monsterLabelText.isHidden = true
         redGolemBtn.isHidden = true
@@ -70,8 +70,8 @@ class ViewController: UIViewController {
     
     @IBAction func pinkGolemBtn(_ sender: AnyObject) {
         
-        monsterChosen = false
-        monster2Chosen = true
+        maleGolemChosen = false
+        femaleGolemChosen = true
         chooseMonsterLabel.isHidden = true
         monsterLabelText.isHidden = true
         redGolemBtn.isHidden = true
@@ -93,8 +93,8 @@ class ViewController: UIViewController {
     var timer: Timer!
     var monsterHappy = false
     var currentItem: UInt32 = 0
-    var monsterChosen: Bool?
-    var monster2Chosen: Bool?
+    var maleGolemChosen: Bool?
+    var femaleGolemChosen: Bool?
     
     var sfxBGMusic: AVAudioPlayer!
     var sfxSkull: AVAudioPlayer!
@@ -113,7 +113,11 @@ class ViewController: UIViewController {
     }
     
     func chooseMonster() {
-        if monsterChosen == true {
+        if maleGolemChosen == true {
+            redGolemMeat.alpha = DIM_ALPHA2
+            redGolemMeat.isUserInteractionEnabled = false
+            redGolemStalactite.alpha = DIM_ALPHA2
+            redGolemStalactite.isUserInteractionEnabled = false
             redGolemHeart.dropTarget = redGolem
             redGolemMeat.dropTarget = redGolem
             redGolemStalactite.dropTarget = redGolem
@@ -123,7 +127,11 @@ class ViewController: UIViewController {
             penaltySkullImg1.alpha = DIM_ALPHA
             penaltySkullImg2.alpha = DIM_ALPHA
             penaltySkullImg3.alpha = DIM_ALPHA
-        } else if monster2Chosen == true {
+        } else if femaleGolemChosen == true {
+            redGolemMeat.alpha = DIM_ALPHA2
+            redGolemMeat.isUserInteractionEnabled = false
+            redGolemStalactite.alpha = DIM_ALPHA2
+            redGolemStalactite.isUserInteractionEnabled = false
             redGolemHeart.dropTarget = pinkGolem
             redGolemMeat.dropTarget = pinkGolem
             redGolemStalactite.dropTarget = pinkGolem
