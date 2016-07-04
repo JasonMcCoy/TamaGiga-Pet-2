@@ -38,11 +38,15 @@ class ViewController: UIViewController {
         monsterHappy = false
         currentItem = 0
         
+        penaltySkullImg1.isHidden = false
+        penaltySkullImg2.isHidden = false
+        penaltySkullImg3.isHidden = false
         penaltySkullImg1.alpha = DIM_ALPHA
         penaltySkullImg2.alpha = DIM_ALPHA
         penaltySkullImg3.alpha = DIM_ALPHA
         
         redGolem.playIdleAnimation()
+        pinkGolem.playIdleAnimation()
         
         restartBtn.isHidden = true
         startGame()
@@ -51,6 +55,8 @@ class ViewController: UIViewController {
     
     @IBAction func redGolemBtn(_ sender: AnyObject) {
         
+        monsterChosen = true
+        monster2Chosen = false
         chooseMonsterLabel.isHidden = true
         monsterLabelText.isHidden = true
         redGolemBtn.isHidden = true
@@ -64,6 +70,8 @@ class ViewController: UIViewController {
     
     @IBAction func pinkGolemBtn(_ sender: AnyObject) {
         
+        monsterChosen = false
+        monster2Chosen = true
         chooseMonsterLabel.isHidden = true
         monsterLabelText.isHidden = true
         redGolemBtn.isHidden = true
@@ -85,8 +93,8 @@ class ViewController: UIViewController {
     var timer: Timer!
     var monsterHappy = false
     var currentItem: UInt32 = 0
-    var monsterChosen = false
-    var monster2Chosen = false
+    var monsterChosen: Bool?
+    var monster2Chosen: Bool?
     
     var sfxBGMusic: AVAudioPlayer!
     var sfxSkull: AVAudioPlayer!
@@ -102,7 +110,6 @@ class ViewController: UIViewController {
         penaltySkullImg2.isHidden = true
         penaltySkullImg3.isHidden = true
         restartBtn.isHidden = true
-        
     }
     
     func chooseMonster() {
@@ -110,12 +117,29 @@ class ViewController: UIViewController {
             redGolemHeart.dropTarget = redGolem
             redGolemMeat.dropTarget = redGolem
             redGolemStalactite.dropTarget = redGolem
+            penaltySkullImg1.isHidden = false
+            penaltySkullImg2.isHidden = false
+            penaltySkullImg3.isHidden = false
+            penaltySkullImg1.alpha = DIM_ALPHA
+            penaltySkullImg2.alpha = DIM_ALPHA
+            penaltySkullImg3.alpha = DIM_ALPHA
         } else if monster2Chosen == true {
             redGolemHeart.dropTarget = pinkGolem
             redGolemMeat.dropTarget = pinkGolem
             redGolemStalactite.dropTarget = pinkGolem
+            penaltySkullImg1.isHidden = false
+            penaltySkullImg2.isHidden = false
+            penaltySkullImg3.isHidden = false
+            penaltySkullImg1.alpha = DIM_ALPHA
+            penaltySkullImg2.alpha = DIM_ALPHA
+            penaltySkullImg3.alpha = DIM_ALPHA
+            redGolem.isHidden = true
+            pinkGolem.isHidden = false
+            pinkGolem.playIdleAnimation()
         }
+        
         startGame()
+        
     }
     
     func itemDroppedOnCharacter(notif: AnyObject) {
@@ -216,7 +240,7 @@ class ViewController: UIViewController {
         currentItem = rand
         monsterHappy = false
         
-}
+    }
     
     func startGame() {
         NotificationCenter.default().addObserver(self, selector: #selector(itemDroppedOnCharacter), name: "onTargetDropped", object: nil)
