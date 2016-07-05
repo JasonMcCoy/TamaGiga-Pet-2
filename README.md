@@ -3,20 +3,24 @@
 *So far only compatible with iPhone 6S in portrait mode for iOS 10.
 
 
-Here is what my xcode setup looks like:
-![alt tag](http://mccoygames.com/wp-content/uploads/2016/07/Screen-Shot-2016-07-02-at-1.31.10-AM.png)
+Here is what my final xcode setup looks like:
+![alt tag](http://mccoygames.com/wp-content/uploads/2016/07/Screen-Shot-2016-07-04-at-10.52.33-PM.png)
 
 
-Here is what the game looks like upon initial launch (so far...)!
-![alt tag](http://mccoygames.com/wp-content/uploads/2016/07/Screen-Shot-2016-07-02-at-1.31.33-AM.png)
+Here is what the game looks like upon initial launch!
+![alt tag](http://mccoygames.com/wp-content/uploads/2016/07/Screen-Shot-2016-07-04-at-10.49.14-PM.png)
 
 
-When you wait 6 seconds without feeding the pet golem. This is a randomly chosen Stalactite.
-![alt tag](http://mccoygames.com/wp-content/uploads/2016/07/Screen-Shot-2016-07-02-at-1.32.17-AM.png)
+You have to drag the food to keep the golem alive. This is a randomly chosen Meat.
+![alt tag](http://mccoygames.com/wp-content/uploads/2016/07/Screen-Shot-2016-07-04-at-10.51.12-PM.png)
+
+
+I have a female golem too!
+![alt tag](http://mccoygames.com/wp-content/uploads/2016/07/Screen-Shot-2016-07-04-at-10.51.48-PM.png)
 
 
 If you neglect your pet golem, this is what happens :'(
-![alt tag](http://mccoygames.com/wp-content/uploads/2016/07/Screen-Shot-2016-07-02-at-1.31.52-AM.png)
+![alt tag](http://mccoygames.com/wp-content/uploads/2016/07/Screen-Shot-2016-07-04-at-10.51.20-PM.png)
 
 
 
