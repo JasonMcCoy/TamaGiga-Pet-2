@@ -251,16 +251,16 @@ class ViewController: UIViewController {
     }
     
     func startGame() {
-        NotificationCenter.default().addObserver(self, selector: #selector(itemDroppedOnCharacter), name: "onTargetDropped", object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(itemDroppedOnCharacter), name: "onTargetDropped" as NSNotification.Name, object: nil)
         
         do {
             
-            try sfxBGMusic = AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main().pathForResource("bgmusic", ofType: "mp3")!))
-            try sfxSkull = AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main().pathForResource("skull", ofType: "wav")!))
-            try sfxHeart = AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main().pathForResource("heart", ofType: "wav")!))
-            try sfxBite = AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main().pathForResource("bite", ofType: "wav")!))
-            try sfxStalactite = AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main().pathForResource("stalactite", ofType: "mp3")!))
-            try sfxDeath = AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main().pathForResource("death", ofType: "wav")!))
+            try sfxBGMusic = AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main.pathForResource("bgmusic", ofType: "mp3")!))
+            try sfxSkull = AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main.pathForResource("skull", ofType: "wav")!))
+            try sfxHeart = AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main.pathForResource("heart", ofType: "wav")!))
+            try sfxBite = AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main.pathForResource("bite", ofType: "wav")!))
+            try sfxStalactite = AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main.pathForResource("stalactite", ofType: "mp3")!))
+            try sfxDeath = AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main.pathForResource("death", ofType: "wav")!))
             
             sfxBGMusic.prepareToPlay()
             sfxBGMusic.play()
