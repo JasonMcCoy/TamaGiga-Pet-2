@@ -255,12 +255,12 @@ class ViewController: UIViewController {
         
         do {
             
-            try sfxBGMusic = AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main.pathForResource("bgmusic", ofType: "mp3")!))
-            try sfxSkull = AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main.pathForResource("skull", ofType: "wav")!))
-            try sfxHeart = AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main.pathForResource("heart", ofType: "wav")!))
-            try sfxBite = AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main.pathForResource("bite", ofType: "wav")!))
-            try sfxStalactite = AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main.pathForResource("stalactite", ofType: "mp3")!))
-            try sfxDeath = AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main.pathForResource("death", ofType: "wav")!))
+            try sfxBGMusic = AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main.path(forResource: "bgmusic", ofType: "mp3")!))
+            try sfxSkull = AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main.path(forResource: "skull", ofType: "wav")!))
+            try sfxHeart = AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main.path(forResource: "heart", ofType: "wav")!))
+            try sfxBite = AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main.path(forResource: "bite", ofType: "wav")!))
+            try sfxStalactite = AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main.path(forResource: "stalactite", ofType: "mp3")!))
+            try sfxDeath = AVAudioPlayer(contentsOf: URL(fileURLWithPath: Bundle.main.path(forResource: "death", ofType: "wav")!))
             
             sfxBGMusic.prepareToPlay()
             sfxBGMusic.play()
@@ -287,7 +287,7 @@ class ViewController: UIViewController {
     }
     
     /* Hide Status Bar */
-    override func prefersStatusBarHidden() -> Bool {
+    func prefersStatusBarHidden() -> Bool {
         return true
     }
     /* End Hide Status Bar */
