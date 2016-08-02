@@ -287,9 +287,9 @@ class ViewController: UIViewController {
     }
     
     /* Hide Status Bar */
-    func prefersStatusBarHidden() -> Bool {
-        return true
-    }
+    //override func prefersStatusBarHidden() -> Bool {
+    //    return true
+    //}
     /* End Hide Status Bar */
 
 }
