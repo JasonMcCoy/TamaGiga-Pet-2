@@ -42,8 +42,7 @@ required init?(coder aDecoder: NSCoder) {
             
             if target.frame.contains(position) {
                
-                NotificationCenter.default.post(NSNotification(name: "onTargetDropped" as NSNotification.Name, object: nil) as Notification)
-            
+                NotificationCenter.default.post(Notification(name: "onTargetDropped" as Notification.Name, object: nil) as Notification)
             }
             
         }
