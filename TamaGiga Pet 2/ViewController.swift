@@ -251,7 +251,7 @@ class ViewController: UIViewController {
     }
     
     func startGame() {
-        NotificationCenter.default.addObserver(self, selector: #selector(itemDroppedOnCharacter), name: "onTargetDropped" as? NSNotification.Name, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(itemDroppedOnCharacter), name: Notification.Name("onTargetDropped"), object: nil)
         
         do {
             
