@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "131F081D1D1FBA2D00376440"
-               BuildableName = "TamaGiga Pet 2.app"
-               BlueprintName = "TamaGiga Pet 2"
-               ReferencedContainer = "container:TamaGiga Pet 2.xcodeproj">
+               BuildableName = "Golem Pets.app"
+               BlueprintName = "Golem Pets"
+               ReferencedContainer = "container:Golem Pets.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "131F081D1D1FBA2D00376440"
-            BuildableName = "TamaGiga Pet 2.app"
-            BlueprintName = "TamaGiga Pet 2"
-            ReferencedContainer = "container:TamaGiga Pet 2.xcodeproj">
+            BuildableName = "Golem Pets.app"
+            BlueprintName = "Golem Pets"
+            ReferencedContainer = "container:Golem Pets.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "131F081D1D1FBA2D00376440"
-            BuildableName = "TamaGiga Pet 2.app"
-            BlueprintName = "TamaGiga Pet 2"
-            ReferencedContainer = "container:TamaGiga Pet 2.xcodeproj">
+            BuildableName = "Golem Pets.app"
+            BlueprintName = "Golem Pets"
+            ReferencedContainer = "container:Golem Pets.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "131F081D1D1FBA2D00376440"
-            BuildableName = "TamaGiga Pet 2.app"
-            BlueprintName = "TamaGiga Pet 2"
-            ReferencedContainer = "container:TamaGiga Pet 2.xcodeproj">
+            BuildableName = "Golem Pets.app"
+            BlueprintName = "Golem Pets"
+            ReferencedContainer = "container:Golem Pets.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

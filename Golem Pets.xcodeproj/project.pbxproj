@@ -25,7 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		131F081E1D1FBA2D00376440 /* TamaGiga Pet 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TamaGiga Pet 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		131F081E1D1FBA2D00376440 /* Golem Pets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Golem Pets.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		131F08211D1FBA2D00376440 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		131F08231D1FBA2D00376440 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		131F08261D1FBA2D00376440 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		131F081F1D1FBA2D00376440 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				131F081E1D1FBA2D00376440 /* TamaGiga Pet 2.app */,
+				131F081E1D1FBA2D00376440 /* Golem Pets.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,9 +97,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		131F081D1D1FBA2D00376440 /* TamaGiga Pet 2 */ = {
+		131F081D1D1FBA2D00376440 /* Golem Pets */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 131F08301D1FBA2D00376440 /* Build configuration list for PBXNativeTarget "TamaGiga Pet 2" */;
+			buildConfigurationList = 131F08301D1FBA2D00376440 /* Build configuration list for PBXNativeTarget "Golem Pets" */;
 			buildPhases = (
 				131F081A1D1FBA2D00376440 /* Sources */,
 				131F081B1D1FBA2D00376440 /* Frameworks */,
@@ -109,9 +109,9 @@
 			);
 			dependencies = (
 			);
-			name = "TamaGiga Pet 2";
+			name = "Golem Pets";
 			productName = "TamaGiga Pet 2";
-			productReference = 131F081E1D1FBA2D00376440 /* TamaGiga Pet 2.app */;
+			productReference = 131F081E1D1FBA2D00376440 /* Golem Pets.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -132,7 +132,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 131F08191D1FBA2D00376440 /* Build configuration list for PBXProject "TamaGiga Pet 2" */;
+			buildConfigurationList = 131F08191D1FBA2D00376440 /* Build configuration list for PBXProject "Golem Pets" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -145,7 +145,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				131F081D1D1FBA2D00376440 /* TamaGiga Pet 2 */,
+				131F081D1D1FBA2D00376440 /* Golem Pets */,
 			);
 		};
 /* End PBXProject section */
@@ -333,7 +333,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		131F08191D1FBA2D00376440 /* Build configuration list for PBXProject "TamaGiga Pet 2" */ = {
+		131F08191D1FBA2D00376440 /* Build configuration list for PBXProject "Golem Pets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				131F082E1D1FBA2D00376440 /* Debug */,
@@ -342,7 +342,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		131F08301D1FBA2D00376440 /* Build configuration list for PBXNativeTarget "TamaGiga Pet 2" */ = {
+		131F08301D1FBA2D00376440 /* Build configuration list for PBXNativeTarget "Golem Pets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				131F08311D1FBA2D00376440 /* Debug */,
